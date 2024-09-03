@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #0d0b8b;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #ff6347;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.pokemon-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 500px;
+  width: 100%;
+}
+
+.pokemon-details h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pokemon-details img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 15rem; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  border: 2px solid #af1c1c; /* Agrega un borde alrededor de la imagen */
+  border-radius: 8px; /* Opcional: redondea las esquinas del borde */
+}
+
+.pokemon-details .info-block {
+  border: 1px solid #af1c1c34; /* Borde alrededor del bloque */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px; /* Espacio dentro del bloque */
+  margin-bottom: 10px; /* Espacio debajo del bloque */
+  background-color: #af1c1c38; /* Fondo del bloque */
+}
+
+.pokemon-details .info-block h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pokemon-details ul {
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.pokemon-details li {
+  margin-bottom: 10px;
+}
+
+.pokemon-details button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #af1c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pokemon-card {
+  width: 200px; /* Tamaño fijo para todas las tarjetas */
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px; /* Espacio entre las tarjetas */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+.pokemon-card img {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: 100px; /* Ajusta la altura de la imagen */
+  margin-bottom: 10px;
+}
+
+.pokemon-card h3 {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.pokemon-card p {
+  margin: 0;
+}
+
+
